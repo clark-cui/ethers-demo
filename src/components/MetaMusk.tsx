@@ -1,3 +1,4 @@
+//connect metamusk wallet demo
 import { ethers } from "ethers";
 import { useState } from "react";
 import React from "react";
@@ -14,6 +15,7 @@ const MetaMusk: React.FC = () => {
 
   return (
     <div className="MetaMusk">
+      <h2 className="title">MetaMusk</h2>
       <h3>Account:{address}</h3>
     </div>
   );
