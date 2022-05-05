@@ -1,7 +1,8 @@
 import { ethers } from "ethers";
 import { useState } from "react";
+import React from "react";
 
-function MetaMusk() {
+const MetaMusk: React.FC = () => {
   const [address, setAddress] = useState("");
   (async () => {
     const provider = new ethers.providers.Web3Provider(window.ethereum);
@@ -16,6 +17,6 @@ function MetaMusk() {
       <h3>Account:{address}</h3>
     </div>
   );
-}
+};
 
 export default MetaMusk;
